@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<title>Mary Ann's Portfolio</title>
+<style>
+}body {
+display: flex;
+min-height: 100vh;
+background: #ffddca;
+}
+.sidebar {
+width: 70px;
+background: #edc9af;
+color: #000;
+padding: 20px;
+position: fixed;
+height: 100%;
+z-index: 1000;
+
+}
+.sidebar ul {
+list-style: none;
+padding: 0;
+}
+.sidebar ul li {
+margin: 20px 0;
+}
+.sidebar ul li a {
+text-decoration: none;
+color: #000;
+font-size: 18px;
+font-weight: bold;
+display: block;
+transition: 0.3s;
+}
+.sidebar ul li a:hover {
+color: #ff9999;
+transform: translateX(10px);
+}
+.section {
+margin-left: 220px;
+padding: 60px 60px;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: 0.5s;
+border-bottom: 2px solid #ddd;
+}
+
+.content {
+max-width: 1000px;
+text-align: center;
+}
+.circle-img {
+width: 250px;
+height: 250px;
+border-radius: 50%;
+overflow: hidden;
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.circle-img img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+h1 {
+font-size: 48px;
+color: #333;
+margin-bottom: 20px;
+}
+h1 span {
+color: #ff9999;
+}
+p {
+font-size: 20px;
+color: #555;
+}
+.skills-list {
+display: flex;
+justify-content: center;
+gap: 30px;
+flex-wrap: wrap;
+}
+.skill {
+background: #ff5733;
+color: white;
+padding: 15px 30px;
+border-radius: 30px;
+transition: 0.3s;
+font-size: 20px;
+cursor: pointer;
+}
+.skill:hover {
+transform: scale(1.1);
+}
+</style>
+
+</head>
+<body>
+
+<div class=
+"sidebar">
+<ul>
+<li><a href=
+  "#home">Home</a></li>
+  <li><a href="#about">About<a></li>
+<li><a
+href=
+"#education">Education</a></li>
+<li><a href=
+"#skills">Skills</a></li>
+<li><a href=
+"#contact">Contact</a></li>
+</ul>
+</div>
+
+<section id=
+"home" class=
+"section">
+<div class=
+"content">
+<div class=
+"circle-img">
+<img src = "/storage/emulated/0/Pictures/Canva/MaryAnn.png" alt="Picture">
+</div>
+<div class=
+"text-content">
+<h1>Hi!
+I'm
+<span>Mary
+Ann</span></h1>
+<p>Software Developer & Graphic
+Designer</p>
+</div>
+</div>
+</section>
+
+<section id=
+"about" class=
+"section">
+<div class=
+"content">
+<h1>ABOUT ME!</h1>
+<p>I am a passionate Software Developer
+and Graphic Designer. I love coding, designing, and
+learning
+new
+technologies
+to
+enhance
+my
+skills.</p>
+</div>
+</section>
+
+<section id=
+"education" class=
+"section">
+<div class=
+"content">
+<h1>Educational Background</h1>
+<div class=
+"education-details">
+<p><strong>Elementary:</strong>
+Buenavista
+East
+Elementary
+School
+(2017)
+ Buenavista East, Candelaria, Quezon</p>
+<p><strong>High
+School:</strong>
+Bukal Sur National High School (2017-2021)
+ Buenavista West, Candelaria, Quezon</p>
+<p><strong>Senior
+High:</strong>
+GRABSUM
+School
+Incorporated
+(2021-2023)
+ Masalukot 1, Candelaria, Quezon</p>
+<p><strong>College:</strong>
+Pamantasan ng Lungsod ng San Pablo (2023-2027)
+ San Pablo, Laguna</p>
+</div>
+</div>
+</section>
+  
+<section id=
+"skills" class=
+"section">
+<div class=
+"content">
+<h1>Skills</h1>
+<div class=
+"skills-list">
+<div
+class=
+"skill"><i
+class=
+"fab
+fa-cuttlefish"></i> C# Language</div>
+<div
+class=
+"skill"><i
+class=
+"fab
+fa-js-square"></i> JavaScript</div>
+<div
+class=
+"skill"><i
+class=
+"fab
+fa-python"></i> Python</div>
+</div>
+</div>
+</section>
+
+<section id=
+"contact" class=
+"section">
+<div class=
+"content">
+<h1>Contact Me</h1>
+<div class=
+"contact-details">
+<p><i
+class=
+"fas
+fa-phone"></i>
+Contact No.: 09944012611</p>
+<p><i
+class=
+"fas
+fa-envelope"></i>
+Email: maryannplata018@gmail.com</p>
+</div>
+</div>
+</section>
+  
+  <script>
+document.querySelectorAll('a[href^=
+"#"]').forEach(a
+nchor => {
+anchor.addEventListener('click', function(e)
+{
+e.preventDefault();
+document.querySelector(this.getAttribute('href')).sc
+rollIntoView({
+behavior: 'smooth'
+});
+});
+});
+</script>
+  
+</body>
+</html>
+
+
